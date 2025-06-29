@@ -8,7 +8,7 @@ COPY frontend/package*.json ./
 RUN npm install
 
 # Build the frontend
-COPY frontend .
+COPY . .
 RUN npm run build
 
 # Production stage (serving static files)
